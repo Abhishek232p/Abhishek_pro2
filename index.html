@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABHISHEK JAISWAL - AI ENGINEER & TECH JOURNALIST</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- 
+    FREE DEPLOYMENT OPTIONS:
+    
+    1. VERCEL DEPLOYMENT:
+       - Install Vercel CLI: npm i -g vercel
+       - Run in project folder: vercel --prod
+       - Follow prompts for automatic deployment
+    
+    2. NETLIFY DEPLOYMENT:
+       - Go to netlify.com/drop
+       - Drag and drop your project folder
+       - Instant deployment with custom domain
+    
+    3. GITHUB PAGES:
+       - Push code to GitHub repository
+       - Go to Settings > Pages
+       - Select source branch and deploy
+    
+    4. FIREBASE HOSTING:
+       - Install Firebase CLI: npm i -g firebase-tools
+       - Run: firebase init hosting
+       - Run: firebase deploy
+    -->
+</head>
+<body>
+    <canvas id="particles"></canvas>
+    
+    <!-- Fixed Navigation -->
+    <nav class="nav-fixed">
+        <div class="nav-content">
+            <div class="nav-logo">AJ</div>
+            <div class="nav-links">
+                <a href="#hero">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#articles">ARTICLES</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#certificates">CERTIFICATES</a>
+                <a href="#ai-network">AI NETWORK</a>
+                <a href="#achievements">ACHIEVEMENTS</a>
+                <a href="#testimonials">TESTIMONIALS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-profile">
+                <div class="profile-photo-frame">
+                    <div class="profile-photo-placeholder">
+                        <span>ABHISHEK<br>JAISWAL</span>
+                    </div>
+                </div>
+            </div>
+            <h1 class="hero-name">AI ENGINEER<br>& TECH JOURNALIST</h1>
+            <div class="hero-roles">
+                <span id="typing-text">BUILDING THE FUTURE</span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-subtitle">BRIDGING AI RESEARCH WITH REAL-WORLD IMPACT • DOCUMENTING THE FUTURE OF TECHNOLOGY</p>
+            <div class="hero-buttons">
+                <a href="#articles" class="btn-neon btn-cyan">READ ARTICLES</a>
+                <a href="#projects" class="btn-neon btn-magenta">VIEW PROJECTS</a>
+                <a href="#contact" class="btn-neon btn-yellow">HIRE ME</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <h2 class="section-title">ABOUT ME</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-description">AI Engineer and Tech Journalist bridging the gap between cutting-edge research and practical implementation. Building AI-driven solutions while documenting the future of technology.</p>
+                    <div class="about-location">
+                        <span class="location-label">LOCATION:</span>
+                        <span class="location-value">MUMBAI, INDIA</span>
+                    </div>
+                </div>
+                <div class="about-education">
+                    <div class="edu-block">
+                        <h3>B.SC. COMPUTER SCIENCE</h3>
+                        <p>Universal College of Engineering, Mumbai</p>
+                        <span class="period">2024-2027</span>
+                    </div>
+                    <div class="edu-block secondary">
+                        <h3>HSC SCIENCE</h3>
+                        <p>Abhinav College, Bhayandar East</p>
+                        <span class="grade">GRADE B</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Articles Section -->
+    <section id="articles" class="articles">
+        <div class="section-container">
+            <h2 class="section-title">LATEST ARTICLES & INSIGHTS</h2>
+            <div class="articles-grid">
+                <div class="article-card">
+                    <div class="article-category">AI TRENDS</div>
+                    <h3 class="article-title">THE RISE OF AI AGENTS IN 2025</h3>
+                    <p class="article-excerpt">Exploring how autonomous AI agents are reshaping business workflows and decision-making processes across industries.</p>
+                    <div class="article-meta">
+                        <span class="article-date">AUG 2025</span>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <div class="article-category">AI DEVELOPMENT</div>
+                    <h3 class="article-title">PROMPT ENGINEERING: THE NEW PROGRAMMING LANGUAGE</h3>
+                    <p class="article-excerpt">Why mastering prompt engineering is becoming as crucial as traditional coding skills for developers.</p>
+                    <div class="article-meta">
+                        <span class="article-date">JUL 2025</span>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <div class="article-category">HEALTHTECH</div>
+                    <h3 class="article-title">HEALTHCARE AI: BEYOND THE HYPE</h3>
+                    <p class="article-excerpt">Real-world applications and challenges of implementing AI in healthcare systems across India.</p>
+                    <div class="article-meta">
+                        <span class="article-date">JUN 2025</span>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <div class="article-category">STARTUPS</div>
+                    <h3 class="article-title">THE STARTUP AI REVOLUTION</h3>
+                    <p class="article-excerpt">How AI is democratizing innovation and enabling solo founders to build scalable businesses.</p>
+                    <div class="article-meta">
+                        <span class="article-date">MAY 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-container">
+            <h2 class="section-title">SKILLS</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">PROGRAMMING</h3>
+                    <div class="skill-tiles">
+                        <div class="skill-tile">PYTHON</div>
+                        <div class="skill-tile">JAVASCRIPT</div>
+                        <div class="skill-tile">TYPESCRIPT</div>
+                        <div class="skill-tile">C++</div>
+                        <div class="skill-tile">R</div>
+                        <div class="skill-tile">SQL</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">AI/ML</h3>
+                    <div class="skill-tiles">
+                        <div class="skill-tile">AI AGENTS</div>
+                        <div class="skill-tile">MCP SERVERS</div>
+                        <div class="skill-tile">PROMPT ENGINEERING</div>
+                        <div class="skill-tile">MODEL TRAINING</div>
+                        <div class="skill-tile">CHATBOTS</div>
+                        <div class="skill-tile">TENSORFLOW</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">WEB DEVELOPMENT</h3>
+                    <div class="skill-tiles">
+                        <div class="skill-tile">HTML5</div>
+                        <div class="skill-tile">CSS3</div>
+                        <div class="skill-tile">REACT NATIVE</div>
+                        <div class="skill-tile">BOOTSTRAP</div>
+                        <div class="skill-tile">WEB FRAMEWORKS</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">TOOLS</h3>
+                    <div class="skill-tiles">
+                        <div class="skill-tile">GIT</div>
+                        <div class="skill-tile">GOOGLE CLOUD</div>
+                        <div class="skill-tile">FIREBASE</div>
+                        <div class="skill-tile">SUPABASE</div>
+                        <div class="skill-tile">VERCEL</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-container">
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="projects-list">
+                <div class="project-card left">
+                    <div class="project-content">
+                        <h3 class="project-name">LLM PROMPT ROADMAP</h3>
+                        <p class="project-desc">30-step foundation model tracker</p>
+                        <div class="project-tech">DOCUMENTATION</div>
+                        <a href="https://github.com/Abhishek232p/llm-prompt-roadmap" target="_blank" class="project-link">VIEW ON GITHUB</a>
+                    </div>
+                </div>
+                <div class="project-card right">
+                    <div class="project-content">
+                        <h3 class="project-name">FITME JOURNEY PORTAL</h3>
+                        <p class="project-desc">Personalized journey tracking</p>
+                        <div class="project-tech">TYPESCRIPT, WEB</div>
+                        <a href="https://github.com/Abhishek232p/fitme-journey-portal" target="_blank" class="project-link">VIEW ON GITHUB</a>
+                    </div>
+                </div>
+                <div class="project-card left">
+                    <div class="project-content">
+                        <h3 class="project-name">JOB PATHWAY CENTER</h3>
+                        <p class="project-desc">Career planning with AI</p>
+                        <div class="project-tech">TYPESCRIPT, AI</div>
+                        <a href="https://github.com/Abhishek232p/job-pathway-center" target="_blank" class="project-link">VIEW ON GITHUB</a>
+                    </div>
+                </div>
+                <div class="project-card right">
+                    <div class="project-content">
+                        <h3 class="project-name">REVENUE OPTIMIZER HUB</h3>
+                        <p class="project-desc">Revenue analysis & anomaly detection</p>
+                        <div class="project-tech">TYPESCRIPT, ML</div>
+                        <div class="project-link inactive">PRIVATE REPO</div>
+                    </div>
+                </div>
+                <div class="project-card left">
+                    <div class="project-content">
+                        <h3 class="project-name">AI AGENT</h3>
+                        <p class="project-desc">Autonomous task handling</p>
+                        <div class="project-tech">PYTHON</div>
+                        <a href="https://github.com/Abhishek232p/AI-Agent" target="_blank" class="project-link">VIEW ON GITHUB</a>
+                    </div>
+                </div>
+                <div class="project-card right">
+                    <div class="project-content">
+                        <h3 class="project-name">AI SCHEDULER</h3>
+                        <p class="project-desc">Smart calendar automation</p>
+                        <div class="project-tech">PYTHON</div>
+                        <a href="https://github.com/Abhishek232p/ai-scheduler" target="_blank" class="project-link">VIEW ON GITHUB</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="section-container">
+            <h2 class="section-title">CERTIFICATIONS</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card verified">
+                    <div class="certificate-header">
+                        <div class="certificate-category">AI/ML</div>
+                        <div class="verified-badge">✓ VERIFIED</div>
+                    </div>
+                    <h3 class="certificate-name">ADVANCED MACHINE LEARNING SPECIALIZATION</h3>
+                    <div class="certificate-issuer">COURSERA - STANFORD UNIVERSITY</div>
+                    <div class="certificate-date">2024</div>
+                </div>
+                <div class="certificate-card verified">
+                    <div class="certificate-header">
+                        <div class="certificate-category">DEEP LEARNING</div>
+                        <div class="verified-badge">✓ VERIFIED</div>
+                    </div>
+                    <h3 class="certificate-name">DEEP LEARNING WITH TENSORFLOW</h3>
+                    <div class="certificate-issuer">GOOGLE AI</div>
+                    <div class="certificate-date">2024</div>
+                </div>
+                <div class="certificate-card verified">
+                    <div class="certificate-header">
+                        <div class="certificate-category">WEB DEVELOPMENT</div>
+                        <div class="verified-badge">✓ VERIFIED</div>
+                    </div>
+                    <h3 class="certificate-name">FULL-STACK WEB DEVELOPMENT</h3>
+                    <div class="certificate-issuer">FREECODECAMP</div>
+                    <div class="certificate-date">2023</div>
+                </div>
+                <div class="certificate-card verified">
+                    <div class="certificate-header">
+                        <div class="certificate-category">CLOUD COMPUTING</div>
+                        <div class="verified-badge">✓ VERIFIED</div>
+                    </div>
+                    <h3 class="certificate-name">CLOUD ARCHITECTURE PROFESSIONAL</h3>
+                    <div class="certificate-issuer">GOOGLE CLOUD PLATFORM</div>
+                    <div class="certificate-date">2024</div>
+                </div>
+                <div class="certificate-card verified">
+                    <div class="certificate-header">
+                        <div class="certificate-category">DATA SCIENCE</div>
+                        <div class="verified-badge">✓ VERIFIED</div>
+                    </div>
+                    <h3 class="certificate-name">PYTHON FOR DATA SCIENCE</h3>
+                    <div class="certificate-issuer">IBM</div>
+                    <div class="certificate-date">2023</div>
+                </div>
+                <div class="certificate-card verified">
+                    <div class="certificate-header">
+                        <div class="certificate-category">AI ETHICS</div>
+                        <div class="verified-badge">✓ VERIFIED</div>
+                    </div>
+                    <h3 class="certificate-name">AI ETHICS AND GOVERNANCE</h3>
+                    <div class="certificate-issuer">MIT XPRO</div>
+                    <div class="certificate-date">2024</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Network Section -->
+    <section id="ai-network" class="ai-network">
+        <div class="section-container">
+            <h2 class="section-title">AI NETWORK</h2>
+            <div class="network-grid">
+                <div class="network-card">
+                    <h3 class="network-title">AI RESEARCH COMMUNITY</h3>
+                    <p class="network-desc">Active member contributing to open research initiatives and collaborative AI projects worldwide.</p>
+                </div>
+                <div class="network-card">
+                    <h3 class="network-title">TECH BLOG CONTRIBUTOR</h3>
+                    <p class="network-desc">Published articles on Medium and Dev.to covering AI trends, ML implementations, and industry insights.</p>
+                </div>
+                <div class="network-card">
+                    <h3 class="network-title">OPEN SOURCE AI PROJECTS</h3>
+                    <p class="network-desc">Maintained repositories for AI agents, prompt engineering tools, and ML automation scripts.</p>
+                </div>
+                <div class="network-card">
+                    <h3 class="network-title">STARTUP ADVISOR (AI/ML)</h3>
+                    <p class="network-desc">Technical advisor for early-stage startups implementing AI solutions in healthcare and fintech.</p>
+                </div>
+                <div class="network-card">
+                    <h3 class="network-title">TECH CONFERENCE SPEAKER</h3>
+                    <p class="network-desc">Regular speaker at AI conferences and workshops, sharing insights on practical AI implementation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="section-container">
+            <h2 class="section-title">ACHIEVEMENTS</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-number" data-count="25">0</div>
+                    <div class="achievement-label">PROJECTS<br>COMPLETED</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-number" data-count="15">0</div>
+                    <div class="achievement-label">ARTICLES<br>PUBLISHED</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-number" data-count="8">0</div>
+                    <div class="achievement-label">GITHUB<br>STARS</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-number" data-count="12">0</div>
+                    <div class="achievement-label">CERTIFICATIONS<br>EARNED</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-number" data-count="3">0</div>
+                    <div class="achievement-label">YEARS<br>EXPERIENCE</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="section-container">
+            <h2 class="section-title">TESTIMONIALS</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Abhishek's ability to bridge technical complexity with business value is exceptional. His AI implementations delivered measurable ROI.</p>
+                    <div class="testimonial-author">
+                        <div class="author-name">TECH STARTUP FOUNDER</div>
+                        <div class="author-role">CEO, HEALTHTECH STARTUP</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">His research insights and technical articles helped our team stay ahead of AI trends. Highly recommended for any AI initiative.</p>
+                    <div class="testimonial-author">
+                        <div class="author-name">INDUSTRY PROFESSIONAL</div>
+                        <div class="author-role">CTO, AI SOLUTIONS COMPANY</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <h2 class="section-title">GET IN TOUCH</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-label">EMAIL:</span>
+                        <a href="mailto:abhiashekjaiso25@gmail.com" class="contact-value">ABHIASHEKJAISO25@GMAIL.COM</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">PHONE:</span>
+                        <a href="tel:+917448106295" class="contact-value">+91 7448106295</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">LINKEDIN:</span>
+                        <a href="https://www.linkedin.com/in/abhishek-jaiswal-b628b135a" target="_blank" class="contact-value">LINKEDIN.COM/IN/ABHISHEK-JAISWAL</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">GITHUB:</span>
+                        <a href="https://github.com/Abhishek232p" target="_blank" class="contact-value">GITHUB.COM/ABHISHEK232P</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">NAME:</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">EMAIL:</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">MESSAGE:</label>
+                            <textarea id="message" name="message" class="form-input" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-neon btn-yellow">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 ABHISHEK JAISWAL. ALL RIGHTS RESERVED.</p>
+            <div class="social-links">
+                <a href="https://github.com/Abhishek232p" target="_blank">GITHUB</a>
+                <a href="https://www.linkedin.com/in/abhishek-jaiswal-b628b135a" target="_blank">LINKEDIN</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
