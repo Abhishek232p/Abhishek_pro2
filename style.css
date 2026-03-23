@@ -1,10 +1,10 @@
 :root {
     --bg-color: #fdfbf7; /* Creamy White */
-    --text-color: #1a1a1a; /* Light Black */
-    --text-secondary: #666666; /* Greyish */
-    --accent-color: #a5c9e1; /* Muted Sky Blue */
-    --secondary-accent: #8da399; /* Sage/Brad Agnies Green */
-    --border-color: #e0e0e0; /* Light Grey */
+    --text-color: #0a0a0a; /* Darker Black for better contrast */
+    --text-secondary: #444444; /* Darker Grey for legibility */
+    --accent-color: #72a6c8; /* Slightly more saturated Sky Blue */
+    --secondary-accent: #5d7369; /* Darker Sage for visibility */
+    --border-color: #d1d1d1; /* Slightly darker border */
     --font-sans: 'Inter', -apple-system, sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
     --font-serif: 'Playfair Display', serif; /* Luxury Feel */
@@ -90,32 +90,10 @@ body {
     align-items: center;
 }
 
-.nav-brand {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.profile-corner {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 1px solid var(--border-color);
-    transition: var(--transition);
-}
-
-.profile-corner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 20%;
-}
-
 .nav-logo {
     font-family: var(--font-mono);
-    font-weight: 500;
-    font-size: 0.85rem;
+    font-weight: 600;
+    font-size: 0.9rem;
     letter-spacing: 0.25em;
     color: var(--text-color);
 }
@@ -128,9 +106,9 @@ body {
 .nav-links a {
     text-decoration: none;
     color: var(--text-secondary);
-    font-size: 0.65rem;
-    font-weight: 500;
-    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     transition: var(--transition);
 }
@@ -173,22 +151,23 @@ body {
 }
 
 .hero-subline {
-    font-size: 1rem;
+    font-size: 1.15rem;
     color: var(--text-secondary);
     margin-bottom: 50px;
-    letter-spacing: 0.02em;
-    max-width: 750px;
+    letter-spacing: 0.01em;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    font-weight: 400;
 }
 
 .btn-minimal {
-    padding: 16px 36px;
+    padding: 18px 40px;
     background-color: var(--text-color);
     color: white;
     text-decoration: none;
-    font-weight: 500;
-    font-size: 0.75rem;
+    font-weight: 600;
+    font-size: 0.8rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     transition: var(--transition);
@@ -227,21 +206,23 @@ body {
 
 .doc-nav-item {
     font-family: var(--font-mono);
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     color: var(--text-secondary);
     margin-bottom: 30px;
     cursor: pointer;
     transition: var(--transition);
-    letter-spacing: 0.2em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     padding-left: 25px;
     border-left: 1px solid var(--border-color);
+    font-weight: 500;
 }
 
 .doc-nav-item.active {
     color: var(--secondary-accent);
-    border-left: 1px solid var(--secondary-accent);
+    border-left: 2px solid var(--secondary-accent);
     padding-left: 35px;
+    font-weight: 600;
 }
 
 .doc-section {
@@ -260,28 +241,29 @@ body {
 
 .observation-tag {
     font-family: var(--font-mono);
-    font-size: 0.6rem;
+    font-size: 0.75rem;
     color: var(--secondary-accent);
-    letter-spacing: 0.3em;
+    letter-spacing: 0.25em;
     display: block;
     margin-bottom: 25px;
-    opacity: 0.5;
+    font-weight: 600;
 }
 
 .doc-title {
     font-family: var(--font-serif);
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 400;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-style: italic;
     color: var(--text-color);
 }
 
 .doc-para {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     color: var(--text-color);
-    margin-bottom: 40px;
-    font-weight: 300;
+    margin-bottom: 35px;
+    font-weight: 400;
+    line-height: 1.7;
 }
 
 .doc-quote {
@@ -302,10 +284,11 @@ body {
 
 .failure-block h4 {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
-    letter-spacing: 0.2em;
+    font-size: 0.9rem;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 /* Innovations Architecture */
@@ -316,7 +299,7 @@ body {
 
 .section-title {
     font-family: var(--font-serif);
-    font-size: 3.2rem;
+    font-size: 3.5rem;
     text-align: center;
     margin-bottom: 100px;
     font-style: italic;
@@ -341,15 +324,29 @@ body {
     box-shadow: 0 20px 40px rgba(0,0,0,0.02);
 }
 
+.service-name {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.service-desc {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
 .innovation-badge {
     display: inline-block;
-    padding: 8px 16px;
+    padding: 10px 20px;
     background: var(--accent-color);
     color: white;
     font-family: var(--font-mono);
-    font-size: 0.65rem;
-    letter-spacing: 0.1em;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
     margin-top: 30px;
+    font-weight: 600;
 }
 
 /* Research Architecture */
@@ -376,6 +373,20 @@ body {
     border-color: var(--accent-color);
 }
 
+.research-title {
+    font-family: var(--font-serif);
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.research-desc {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
 /* Contact Centered Architecture */
 .contact {
     padding: 200px 0;
@@ -389,12 +400,13 @@ body {
 }
 
 .contact-subline {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     color: var(--text-secondary);
     margin-bottom: 80px;
-    max-width: 700px;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
+    font-weight: 400;
 }
 
 .contact-links-centered {
@@ -406,11 +418,12 @@ body {
 
 .contact-links-centered a {
     font-family: var(--font-mono);
-    font-size: 0.8rem;
-    letter-spacing: 0.3em;
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
     text-decoration: none;
     color: var(--text-color);
     transition: var(--transition);
+    font-weight: 500;
 }
 
 .contact-links-centered a:hover {
@@ -433,10 +446,10 @@ body {
     width: 100%;
     background: transparent;
     border: none;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
     padding: 15px 0;
     font-family: var(--font-sans);
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--text-color);
     transition: var(--transition);
 }
@@ -462,10 +475,11 @@ body {
 
 .footer p {
     font-family: var(--font-mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.3em;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
     color: var(--text-secondary);
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 /* Gesture States */
