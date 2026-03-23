@@ -400,6 +400,16 @@ body {
     color: var(--text-color);
 }
 
+.personal-formula {
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    letter-spacing: 0.15em;
+    color: var(--accent-color);
+    text-transform: lowercase;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
 /* Research Architecture */
 .research {
     padding: 200px 0;
