@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 else if (this.y < 0) this.y = canvas.height;
             }
             draw() {
-                ctx.fillStyle = `rgba(141, 163, 153, ${this.opacity})`;
+                ctx.fillStyle = `rgba(176, 125, 125, ${this.opacity})`; // Muted Rose Pink Particles
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
                 ctx.fill();
