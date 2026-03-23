@@ -3,398 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABHISHEK JAISWAL - AI ENGINEER & TECH JOURNALIST</title>
+    <title>Abhishek Jaiswal | Narrative Architect & Systems Visionary</title>
     <link rel="stylesheet" href="style.css">
-    
-    <!-- 
-    FREE DEPLOYMENT OPTIONS:
-    
-    1. VERCEL DEPLOYMENT:
-       - Install Vercel CLI: npm i -g vercel
-       - Run in project folder: vercel --prod
-       - Follow prompts for automatic deployment
-    
-    2. NETLIFY DEPLOYMENT:
-       - Go to netlify.com/drop
-       - Drag and drop your project folder
-       - Instant deployment with custom domain
-    
-    3. GITHUB PAGES:
-       - Push code to GitHub repository
-       - Go to Settings > Pages
-       - Select source branch and deploy
-    
-    4. FIREBASE HOSTING:
-       - Install Firebase CLI: npm i -g firebase-tools
-       - Run: firebase init hosting
-       - Run: firebase deploy
-    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="minimal-theme">
+    <div id="custom-cursor"></div>
     <canvas id="particles"></canvas>
-    
-    <!-- Fixed Navigation -->
+
+    <!-- Navigation Architecture -->
     <nav class="nav-fixed">
         <div class="nav-content">
-            <div class="nav-logo">AJ</div>
+            <div class="nav-brand">
+                <div class="profile-corner">
+                    <img src="profile.jpg" alt="Abhishek Jaiswal">
+                </div>
+                <div class="nav-logo">ABHISHEK JAISWAL</div>
+            </div>
             <div class="nav-links">
-                <a href="#hero">HOME</a>
-                <a href="#about">ABOUT</a>
-                <a href="#articles">ARTICLES</a>
-                <a href="#skills">SKILLS</a>
-                <a href="#projects">PROJECTS</a>
-                <a href="#certificates">CERTIFICATES</a>
-                <a href="#ai-network">AI NETWORK</a>
-                <a href="#achievements">ACHIEVEMENTS</a>
-                <a href="#testimonials">TESTIMONIALS</a>
-                <a href="#contact">CONTACT</a>
+                <a href="#hero">Identity</a>
+                <a href="#documentary">Journey</a>
+                <a href="#innovations">Innovations</a>
+                <a href="#research">Research</a>
+                <a href="#vision">Vision</a>
+                <a href="#contact">Connect</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section: The Statement -->
     <section id="hero" class="hero">
         <div class="hero-content">
-            <div class="hero-profile">
-                <div class="profile-photo-frame">
-                    <div class="profile-photo-placeholder">
-                        <span>ABHISHEK<br>JAISWAL</span>
-                    </div>
-                </div>
+            <h2 class="hero-eyebrow gesture-reveal">ARCHITECTING SYSTEMS OF INTENT</h2>
+            <h1 class="hero-identity gesture-reveal">
+                Designing the future through failure, building the layers of digital existence.
+            </h1>
+            <div class="hero-subline gesture-reveal">
+                I am a builder who stopped chasing ideas to start solving problems. From healthcare to luxury wearables, I engineer high-impact solutions that scale globally.
             </div>
-            <h1 class="hero-name">AI ENGINEER<br>& TECH JOURNALIST</h1>
-            <div class="hero-roles">
-                <span id="typing-text">BUILDING THE FUTURE</span>
-                <span class="cursor">|</span>
-            </div>
-            <p class="hero-subtitle">BRIDGING AI RESEARCH WITH REAL-WORLD IMPACT • DOCUMENTING THE FUTURE OF TECHNOLOGY</p>
-            <div class="hero-buttons">
-                <a href="#articles" class="btn-neon btn-cyan">READ ARTICLES</a>
-                <a href="#projects" class="btn-neon btn-magenta">VIEW PROJECTS</a>
-                <a href="#contact" class="btn-neon btn-yellow">HIRE ME</a>
+            <div class="hero-cta gesture-reveal">
+                <a href="#documentary" class="btn-minimal">ENTER THE DOCUMENTARY</a>
+                <a href="#contact" class="btn-minimal secondary">INITIATE CONNECTION</a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Documentary Section: The Journey -->
+    <section id="documentary" class="documentary">
         <div class="section-container">
-            <h2 class="section-title">ABOUT ME</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p class="about-description">AI Engineer and Tech Journalist bridging the gap between cutting-edge research and practical implementation. Building AI-driven solutions while documenting the future of technology.</p>
-                    <div class="about-location">
-                        <span class="location-label">LOCATION:</span>
-                        <span class="location-value">MUMBAI, INDIA</span>
-                    </div>
+            <div class="doc-grid">
+                <div class="doc-nav">
+                    <div class="doc-nav-item active" data-target="who-i-am">THE ARCHITECT</div>
+                    <div class="doc-nav-item" data-target="beginning">THE GENESIS</div>
+                    <div class="doc-nav-item" data-target="failures">THE CRUCIBLE</div>
+                    <div class="doc-nav-item" data-target="the-shift">THE METAMORPHOSIS</div>
+                    <div class="doc-nav-item" data-target="neuroflow">NEUROFLOW AI</div>
+                    <div class="doc-nav-item" data-target="acuresh">SYSTEMIC GROWTH</div>
                 </div>
-                <div class="about-education">
-                    <div class="edu-block">
-                        <h3>B.SC. COMPUTER SCIENCE</h3>
-                        <p>Universal College of Engineering, Mumbai</p>
-                        <span class="period">2024-2027</span>
-                    </div>
-                    <div class="edu-block secondary">
-                        <h3>HSC SCIENCE</h3>
-                        <p>Abhinav College, Bhayandar East</p>
-                        <span class="grade">GRADE B</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Latest Articles Section -->
-    <section id="articles" class="articles">
-        <div class="section-container">
-            <h2 class="section-title">LATEST ARTICLES & INSIGHTS</h2>
-            <div class="articles-grid">
-                <div class="article-card">
-                    <div class="article-category">AI TRENDS</div>
-                    <h3 class="article-title">THE RISE OF AI AGENTS IN 2025</h3>
-                    <p class="article-excerpt">Exploring how autonomous AI agents are reshaping business workflows and decision-making processes across industries.</p>
-                    <div class="article-meta">
-                        <span class="article-date">AUG 2025</span>
+                <div class="doc-content">
+                    <!-- The Architect -->
+                    <div id="who-i-am" class="doc-section active">
+                        <span class="observation-tag">OBSERVATION 01</span>
+                        <h3 class="doc-title">The Architect's Core</h3>
+                        <p class="doc-para">I am not just a student, a developer, or a founder. I am a builder of systems. As a second-year B.Sc. Computer Science student, I chose to ignore traditional academic constraints, stepping into the volatility of the real world to let creation define my path.</p>
+                        <p class="doc-para">While others follow structured paths, I chose to design my own.</p>
                     </div>
-                </div>
-                <div class="article-card">
-                    <div class="article-category">AI DEVELOPMENT</div>
-                    <h3 class="article-title">PROMPT ENGINEERING: THE NEW PROGRAMMING LANGUAGE</h3>
-                    <p class="article-excerpt">Why mastering prompt engineering is becoming as crucial as traditional coding skills for developers.</p>
-                    <div class="article-meta">
-                        <span class="article-date">JUL 2025</span>
-                    </div>
-                </div>
-                <div class="article-card">
-                    <div class="article-category">HEALTHTECH</div>
-                    <h3 class="article-title">HEALTHCARE AI: BEYOND THE HYPE</h3>
-                    <p class="article-excerpt">Real-world applications and challenges of implementing AI in healthcare systems across India.</p>
-                    <div class="article-meta">
-                        <span class="article-date">JUN 2025</span>
-                    </div>
-                </div>
-                <div class="article-card">
-                    <div class="article-category">STARTUPS</div>
-                    <h3 class="article-title">THE STARTUP AI REVOLUTION</h3>
-                    <p class="article-excerpt">How AI is democratizing innovation and enabling solo founders to build scalable businesses.</p>
-                    <div class="article-meta">
-                        <span class="article-date">MAY 2025</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="section-container">
-            <h2 class="section-title">SKILLS</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="skill-category-title">PROGRAMMING</h3>
-                    <div class="skill-tiles">
-                        <div class="skill-tile">PYTHON</div>
-                        <div class="skill-tile">JAVASCRIPT</div>
-                        <div class="skill-tile">TYPESCRIPT</div>
-                        <div class="skill-tile">C++</div>
-                        <div class="skill-tile">R</div>
-                        <div class="skill-tile">SQL</div>
+                    <!-- The Genesis -->
+                    <div id="beginning" class="doc-section">
+                        <span class="observation-tag">OBSERVATION 02</span>
+                        <h3 class="doc-title">Genesis: Curiosity Over Comfort</h3>
+                        <p class="doc-para">My journey didn't start with funding or a perfect idea. It was forged in raw curiosity and an obsession with systemic integrity. I didn't want to just learn AI; I wanted to deconstruct it, test its limits, and rebuild it into something meaningful.</p>
+                        <div class="doc-quote">
+                            “Obsession is the only filter for true innovation.”
+                        </div>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title">AI/ML</h3>
-                    <div class="skill-tiles">
-                        <div class="skill-tile">AI AGENTS</div>
-                        <div class="skill-tile">MCP SERVERS</div>
-                        <div class="skill-tile">PROMPT ENGINEERING</div>
-                        <div class="skill-tile">MODEL TRAINING</div>
-                        <div class="skill-tile">CHATBOTS</div>
-                        <div class="skill-tile">TENSORFLOW</div>
+
+                    <!-- The Crucible -->
+                    <div id="failures" class="doc-section">
+                        <span class="observation-tag">OBSERVATION 03</span>
+                        <h3 class="doc-title">The Crucible: Failure as Foundation</h3>
+                        <p class="doc-para">I didn't build a single startup; I built multiple environments for learning. And I failed. Twice. Each failure was a masterclass in execution.</p>
+                        <div class="failure-block">
+                            <h4>Phase 1: The Reality Check</h4>
+                            <p>Excitement without market validation led to inevitable collapse. It taught me the most vital lesson: Ideas are cheap; execution is the only currency.</p>
+                        </div>
+                        <div class="failure-block">
+                            <h4>Phase 2: The Refined Incomplete</h4>
+                            <p>Better tools and deeper technical understanding, yet still lacking the human-centric data required for market fit. This was progress disguised as loss.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title">WEB DEVELOPMENT</h3>
-                    <div class="skill-tiles">
-                        <div class="skill-tile">HTML5</div>
-                        <div class="skill-tile">CSS3</div>
-                        <div class="skill-tile">REACT NATIVE</div>
-                        <div class="skill-tile">BOOTSTRAP</div>
-                        <div class="skill-tile">WEB FRAMEWORKS</div>
+
+                    <!-- The Metamorphosis -->
+                    <div id="the-shift" class="doc-section">
+                        <span class="observation-tag">OBSERVATION 04</span>
+                        <h3 class="doc-title">Metamorphosis: The Shift</h3>
+                        <p class="doc-para">After two failures, I didn't quit; I evolved. I stopped chasing "cool" ideas and started solving deep-rooted problems. I stopped building products and started building for impact.</p>
+                        <div class="doc-quote">
+                            “I collect failures like assets. Each one builds clarity.”
+                        </div>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title">TOOLS</h3>
-                    <div class="skill-tiles">
-                        <div class="skill-tile">GIT</div>
-                        <div class="skill-tile">GOOGLE CLOUD</div>
-                        <div class="skill-tile">FIREBASE</div>
-                        <div class="skill-tile">SUPABASE</div>
-                        <div class="skill-tile">VERCEL</div>
+
+                    <!-- NeuroFlow AI -->
+                    <div id="neuroflow" class="doc-section">
+                        <span class="observation-tag">OBSERVATION 05</span>
+                        <h3 class="doc-title">NeuroFlow AI: Execution First</h3>
+                        <p class="doc-para">NeuroFlow is not a chatbot or an assistant. It is an AI execution system designed to remove the interface between intent and action. We are building the engine that allows AI to perform the work, not just suggest it.</p>
+                    </div>
+
+                    <!-- Systemic Growth -->
+                    <div id="acuresh" class="doc-section">
+                        <span class="observation-tag">OBSERVATION 06</span>
+                        <h3 class="doc-title">Acuresh: Scaling Through Data</h3>
+                        <p class="doc-para">Acuresh represents the culmination of my persistence. It is a system built on the data points of every previous failure—structured, evolving, and designed for global scale.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- Innovations Section -->
+    <section id="innovations" class="services">
         <div class="section-container">
-            <h2 class="section-title">PROJECTS</h2>
-            <div class="projects-list">
-                <div class="project-card left">
-                    <div class="project-content">
-                        <h3 class="project-name">LLM PROMPT ROADMAP</h3>
-                        <p class="project-desc">30-step foundation model tracker</p>
-                        <div class="project-tech">DOCUMENTATION</div>
-                        <a href="https://github.com/Abhishek232p/llm-prompt-roadmap" target="_blank" class="project-link">VIEW ON GITHUB</a>
-                    </div>
+            <h2 class="section-title">Core Innovations</h2>
+            <div class="services-grid">
+                <!-- Curalive -->
+                <div class="service-card gesture-hover">
+                    <h3 class="service-name">Curalive: Holistic Health</h3>
+                    <p class="service-desc">A global platform engineered for holistic healthcare, launching first in India. Curalive is an offline-first systematic application featuring a **Big Data Artificial Navigation Bar**.</p>
+                    <p class="service-desc" style="margin-top: 20px;">Supporting 22 languages, it bridges the gap between foreign visitors and Indian citizens through deep medical matching.</p>
+                    <div class="innovation-badge">22 LANGUAGES</div>
                 </div>
-                <div class="project-card right">
-                    <div class="project-content">
-                        <h3 class="project-name">FITME JOURNEY PORTAL</h3>
-                        <p class="project-desc">Personalized journey tracking</p>
-                        <div class="project-tech">TYPESCRIPT, WEB</div>
-                        <a href="https://github.com/Abhishek232p/fitme-journey-portal" target="_blank" class="project-link">VIEW ON GITHUB</a>
-                    </div>
+
+                <!-- NeuroSkin -->
+                <div class="service-card gesture-hover">
+                    <h3 class="service-name">NeuroSkin: Luxury Lifestyle</h3>
+                    <p class="service-desc">Redefining luxury through wearable innovation. NeuroSkin is a neuro-responsive lifestyle watch that merges high-end aesthetics with systemic design.</p>
+                    <p class="service-desc" style="margin-top: 20px;">More than a timepiece; it is an extension of intent and a gateway to a luxury lifestyle.</p>
                 </div>
-                <div class="project-card left">
-                    <div class="project-content">
-                        <h3 class="project-name">JOB PATHWAY CENTER</h3>
-                        <p class="project-desc">Career planning with AI</p>
-                        <div class="project-tech">TYPESCRIPT, AI</div>
-                        <a href="https://github.com/Abhishek232p/job-pathway-center" target="_blank" class="project-link">VIEW ON GITHUB</a>
-                    </div>
+
+                <!-- AI Systems -->
+                <div class="service-card gesture-hover">
+                    <h3 class="service-name">IDE Design Patents</h3>
+                    <p class="service-desc">I have secured patents for two unique IDE designs, built to redefine the creative workflow for the next generation of builders.</p>
                 </div>
-                <div class="project-card right">
-                    <div class="project-content">
-                        <h3 class="project-name">REVENUE OPTIMIZER HUB</h3>
-                        <p class="project-desc">Revenue analysis & anomaly detection</p>
-                        <div class="project-tech">TYPESCRIPT, ML</div>
-                        <div class="project-link inactive">PRIVATE REPO</div>
-                    </div>
-                </div>
-                <div class="project-card left">
-                    <div class="project-content">
-                        <h3 class="project-name">AI AGENT</h3>
-                        <p class="project-desc">Autonomous task handling</p>
-                        <div class="project-tech">PYTHON</div>
-                        <a href="https://github.com/Abhishek232p/AI-Agent" target="_blank" class="project-link">VIEW ON GITHUB</a>
-                    </div>
-                </div>
-                <div class="project-card right">
-                    <div class="project-content">
-                        <h3 class="project-name">AI SCHEDULER</h3>
-                        <p class="project-desc">Smart calendar automation</p>
-                        <div class="project-tech">PYTHON</div>
-                        <a href="https://github.com/Abhishek232p/ai-scheduler" target="_blank" class="project-link">VIEW ON GITHUB</a>
-                    </div>
+
+                <!-- Strategy -->
+                <div class="service-card gesture-hover">
+                    <h3 class="service-name">Execution Strategy</h3>
+                    <p class="service-desc">Helping startups scale by redesigning their operational core through idea validation and market testing.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Enhanced Certificates Section -->
-    <section id="certificates" class="certificates">
+    <!-- Research Section -->
+    <section id="research" class="research">
         <div class="section-container">
-            <h2 class="section-title">CERTIFICATIONS</h2>
-            <div class="certificates-grid">
-                <div class="certificate-card verified">
-                    <div class="certificate-header">
-                        <div class="certificate-category">AI/ML</div>
-                        <div class="verified-badge">✓ VERIFIED</div>
-                    </div>
-                    <h3 class="certificate-name">ADVANCED MACHINE LEARNING SPECIALIZATION</h3>
-                    <div class="certificate-issuer">COURSERA - STANFORD UNIVERSITY</div>
-                    <div class="certificate-date">2024</div>
+            <h2 class="section-title">Research & Intellectual Assets</h2>
+            <div class="research-grid">
+                <div class="research-card gesture-reveal">
+                    <span class="observation-tag">PUBLICATION 01</span>
+                    <h3 class="research-title">Systems Thinking in AI-Driven Healthcare</h3>
+                    <p class="research-desc">Analysis of holistic healthcare architecture and big data integration for global patient lifecycles.</p>
+                    <a href="#" class="btn-minimal secondary">DOWNLOAD PAPER</a>
                 </div>
-                <div class="certificate-card verified">
-                    <div class="certificate-header">
-                        <div class="certificate-category">DEEP LEARNING</div>
-                        <div class="verified-badge">✓ VERIFIED</div>
-                    </div>
-                    <h3 class="certificate-name">DEEP LEARNING WITH TENSORFLOW</h3>
-                    <div class="certificate-issuer">GOOGLE AI</div>
-                    <div class="certificate-date">2024</div>
+                <div class="research-card gesture-reveal">
+                    <span class="observation-tag">DOCUMENT 01</span>
+                    <h3 class="research-title">NeuroSkin: Systemic Wearable Philosophy</h3>
+                    <p class="research-desc">The technical blueprints and design philosophy behind neuro-responsive luxury wearables.</p>
+                    <a href="#" class="btn-minimal secondary">VIEW DOCUMENT</a>
                 </div>
-                <div class="certificate-card verified">
-                    <div class="certificate-header">
-                        <div class="certificate-category">WEB DEVELOPMENT</div>
-                        <div class="verified-badge">✓ VERIFIED</div>
-                    </div>
-                    <h3 class="certificate-name">FULL-STACK WEB DEVELOPMENT</h3>
-                    <div class="certificate-issuer">FREECODECAMP</div>
-                    <div class="certificate-date">2023</div>
-                </div>
-                <div class="certificate-card verified">
-                    <div class="certificate-header">
-                        <div class="certificate-category">CLOUD COMPUTING</div>
-                        <div class="verified-badge">✓ VERIFIED</div>
-                    </div>
-                    <h3 class="certificate-name">CLOUD ARCHITECTURE PROFESSIONAL</h3>
-                    <div class="certificate-issuer">GOOGLE CLOUD PLATFORM</div>
-                    <div class="certificate-date">2024</div>
-                </div>
-                <div class="certificate-card verified">
-                    <div class="certificate-header">
-                        <div class="certificate-category">DATA SCIENCE</div>
-                        <div class="verified-badge">✓ VERIFIED</div>
-                    </div>
-                    <h3 class="certificate-name">PYTHON FOR DATA SCIENCE</h3>
-                    <div class="certificate-issuer">IBM</div>
-                    <div class="certificate-date">2023</div>
-                </div>
-                <div class="certificate-card verified">
-                    <div class="certificate-header">
-                        <div class="certificate-category">AI ETHICS</div>
-                        <div class="verified-badge">✓ VERIFIED</div>
-                    </div>
-                    <h3 class="certificate-name">AI ETHICS AND GOVERNANCE</h3>
-                    <div class="certificate-issuer">MIT XPRO</div>
-                    <div class="certificate-date">2024</div>
+                <div class="research-card gesture-reveal">
+                    <span class="observation-tag">PATENT ASSET</span>
+                    <h3 class="research-title">IDE Design Patent Specifications</h3>
+                    <p class="research-desc">Detailed architectural specifications for the two patented IDE designs.</p>
+                    <a href="#" class="btn-minimal secondary">ACCESS REFINES</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- AI Network Section -->
-    <section id="ai-network" class="ai-network">
+    <!-- Vision Section -->
+    <section id="vision" class="vision">
         <div class="section-container">
-            <h2 class="section-title">AI NETWORK</h2>
-            <div class="network-grid">
-                <div class="network-card">
-                    <h3 class="network-title">AI RESEARCH COMMUNITY</h3>
-                    <p class="network-desc">Active member contributing to open research initiatives and collaborative AI projects worldwide.</p>
+            <h2 class="section-title">The Visionary Core</h2>
+            <div class="vision-content">
+                <div class="vision-item">
+                    <h3>Impact Beyond Success</h3>
+                    <p>Building for technological transformation that reshapes how humans interact with healthcare and luxury for decades.</p>
                 </div>
-                <div class="network-card">
-                    <h3 class="network-title">TECH BLOG CONTRIBUTOR</h3>
-                    <p class="network-desc">Published articles on Medium and Dev.to covering AI trends, ML implementations, and industry insights.</p>
+                <div class="vision-item">
+                    <h3>Innovation Leadership</h3>
+                    <p>Pioneering the next wave of systems thinking, where AI is the primary engine of human evolution.</p>
                 </div>
-                <div class="network-card">
-                    <h3 class="network-title">OPEN SOURCE AI PROJECTS</h3>
-                    <p class="network-desc">Maintained repositories for AI agents, prompt engineering tools, and ML automation scripts.</p>
-                </div>
-                <div class="network-card">
-                    <h3 class="network-title">STARTUP ADVISOR (AI/ML)</h3>
-                    <p class="network-desc">Technical advisor for early-stage startups implementing AI solutions in healthcare and fintech.</p>
-                </div>
-                <div class="network-card">
-                    <h3 class="network-title">TECH CONFERENCE SPEAKER</h3>
-                    <p class="network-desc">Regular speaker at AI conferences and workshops, sharing insights on practical AI implementation.</p>
+                <div class="vision-item">
+                    <h3>Global Accessibility</h3>
+                    <p>Creating borderless technology that ensures innovation is accessible to every citizen of the world.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements">
-        <div class="section-container">
-            <h2 class="section-title">ACHIEVEMENTS</h2>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="achievement-number" data-count="25">0</div>
-                    <div class="achievement-label">PROJECTS<br>COMPLETED</div>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-number" data-count="15">0</div>
-                    <div class="achievement-label">ARTICLES<br>PUBLISHED</div>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-number" data-count="8">0</div>
-                    <div class="achievement-label">GITHUB<br>STARS</div>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-number" data-count="12">0</div>
-                    <div class="achievement-label">CERTIFICATIONS<br>EARNED</div>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-number" data-count="3">0</div>
-                    <div class="achievement-label">YEARS<br>EXPERIENCE</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="section-container">
-            <h2 class="section-title">TESTIMONIALS</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-quote">"</div>
-                    <p class="testimonial-text">Abhishek's ability to bridge technical complexity with business value is exceptional. His AI implementations delivered measurable ROI.</p>
-                    <div class="testimonial-author">
-                        <div class="author-name">TECH STARTUP FOUNDER</div>
-                        <div class="author-role">CEO, HEALTHTECH STARTUP</div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-quote">"</div>
-                    <p class="testimonial-text">His research insights and technical articles helped our team stay ahead of AI trends. Highly recommended for any AI initiative.</p>
-                    <div class="testimonial-author">
-                        <div class="author-name">INDUSTRY PROFESSIONAL</div>
-                        <div class="author-role">CTO, AI SOLUTIONS COMPANY</div>
-                    </div>
-                </div>
+            <div class="final-statement gesture-reveal">
+                “I don’t build products. I architect the future of how we live and heal.”
             </div>
         </div>
     </section>
@@ -402,42 +214,26 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="section-container">
-            <h2 class="section-title">GET IN TOUCH</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <span class="contact-label">EMAIL:</span>
-                        <a href="mailto:abhiashekjaiso25@gmail.com" class="contact-value">ABHIASHEKJAISO25@GMAIL.COM</a>
+            <div class="contact-centered">
+                <span class="observation-tag">FINAL MOMENTUM</span>
+                <h2 class="gesture-reveal">Initiate Systemic Connection</h2>
+                <p class="contact-subline gesture-reveal">
+                    If you are building a framework that challenges the status quo, I am ready to architect its trajectory. Let's execute with surgical precision.
+                </p>
+                <div class="contact-grid-centered">
+                    <div class="contact-links-centered gesture-reveal">
+                        <a href="mailto:abhiashekjaiso25@gmail.com" class="gesture-link"><span>→</span> EMAIL: ABHIASHEKJAISO25@GMAIL.COM</a>
+                        <a href="https://www.linkedin.com/in/abhishek-jaiswal-b628b135a" target="_blank" class="gesture-link"><span>→</span> LINKEDIN: ABHISHEK JAISWAL</a>
+                        <a href="https://github.com/Abhishek232p" target="_blank" class="gesture-link"><span>→</span> GITHUB: ABHISHEK232P</a>
                     </div>
-                    <div class="contact-item">
-                        <span class="contact-label">PHONE:</span>
-                        <a href="tel:+917448106295" class="contact-value">+91 7448106295</a>
+                    <div class="contact-form-centered gesture-reveal">
+                        <form id="contact-form">
+                            <div class="input-gesture"><input type="text" placeholder="FULL NAME / ORGANIZATION" required></div>
+                            <div class="input-gesture"><input type="email" placeholder="SECURE EMAIL ADDRESS" required></div>
+                            <div class="input-gesture"><textarea placeholder="DESCRIBE THE SYSTEMIC CHALLENGE" rows="5" required></textarea></div>
+                            <button type="submit" class="btn-minimal centered-btn">EXECUTE INQUIRY</button>
+                        </form>
                     </div>
-                    <div class="contact-item">
-                        <span class="contact-label">LINKEDIN:</span>
-                        <a href="https://www.linkedin.com/in/abhishek-jaiswal-b628b135a" target="_blank" class="contact-value">LINKEDIN.COM/IN/ABHISHEK-JAISWAL</a>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">GITHUB:</span>
-                        <a href="https://github.com/Abhishek232p" target="_blank" class="contact-value">GITHUB.COM/ABHISHEK232P</a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <label for="name" class="form-label">NAME:</label>
-                            <input type="text" id="name" name="name" class="form-input" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="form-label">EMAIL:</label>
-                            <input type="email" id="email" name="email" class="form-input" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="form-label">MESSAGE:</label>
-                            <textarea id="message" name="message" class="form-input" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-neon btn-yellow">SEND MESSAGE</button>
-                    </form>
                 </div>
             </div>
         </div>
@@ -446,11 +242,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2025 ABHISHEK JAISWAL. ALL RIGHTS RESERVED.</p>
-            <div class="social-links">
-                <a href="https://github.com/Abhishek232p" target="_blank">GITHUB</a>
-                <a href="https://www.linkedin.com/in/abhishek-jaiswal-b628b135a" target="_blank">LINKEDIN</a>
-            </div>
+            <p>&copy; 2026 ABHISHEK JAISWAL. ALL RIGHTS RESERVED. NARRATIVE ARCHITECT.</p>
         </div>
     </footer>
 
