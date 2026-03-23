@@ -402,12 +402,45 @@ body {
 
 .personal-formula {
     font-family: var(--font-mono);
-    font-size: 1.1rem;
-    letter-spacing: 0.15em;
+    font-size: 1rem;
+    letter-spacing: 0.3em;
     color: var(--accent-color);
     text-transform: lowercase;
-    margin-bottom: 30px;
-    font-weight: 500;
+    margin-bottom: 40px;
+    font-weight: 600;
+    padding: 12px 30px;
+    border: 1px solid var(--border-color);
+    display: inline-block;
+    background: rgba(107, 29, 29, 0.03);
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(107, 29, 29, 0.05);
+}
+
+.vision-grid-internal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.vision-point h4 {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+    font-style: italic;
+}
+
+.vision-point p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.vision-transition {
+    padding: 150px 0;
+    background: white;
+    text-align: center;
 }
 
 /* Research Architecture */
@@ -499,7 +532,18 @@ body {
 
 .input-gesture {
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+}
+
+.input-gesture label {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--accent-color);
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .input-gesture input,
@@ -508,7 +552,7 @@ body {
     background: transparent;
     border: none;
     border-bottom: 2px solid var(--border-color);
-    padding: 15px 0;
+    padding: 10px 0;
     font-family: var(--font-sans);
     font-size: 1.1rem;
     color: var(--text-color);
