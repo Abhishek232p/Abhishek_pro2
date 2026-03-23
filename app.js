@@ -45,7 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         function init() {
             particles = [];
-            const count = (canvas.width * canvas.height) / 25000;
+            let count = (canvas.width * canvas.height) / 25000;
+            if (count > 150) count = 150; // Cap particles for performance
             for (let i = 0; i < count; i++) particles.push(new Particle());
         }
 
@@ -66,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
             cursor.style.left = `${e.clientX}px`;
             cursor.style.top = `${e.clientY}px`;
         });
-        const activeElements = document.querySelectorAll('a, button, .doc-nav-item, .profile-corner');
+        const activeElements = document.querySelectorAll('a, button, .doc-nav-item, .gesture-hover');
         activeElements.forEach(el => {
             el.addEventListener('mouseenter', () => cursor.classList.add('active'));
             el.addEventListener('mouseleave', () => cursor.classList.remove('active'));
@@ -112,11 +113,39 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // 6. Contact Form System
+    function initContactForm() {
+        const form = document.getElementById('contact-form');
+        if (!form) return;
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = form.querySelector('button');
+            const originalText = btn.innerText;
+            btn.innerText = 'TRANSMITTING...';
+            btn.disabled = true;
+
+            // Simulate systemic transmission
+            setTimeout(() => {
+                btn.innerText = 'TRANSMISSION SUCCESSFUL';
+                btn.style.background = 'var(--accent-color)';
+                btn.style.color = 'white';
+                form.reset();
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.disabled = false;
+                    btn.style.background = '';
+                    btn.style.color = '';
+                }, 3000);
+            }, 1500);
+        });
+    }
+
     // Initialize Architecture
     initParticles();
     initCursor();
     initDocTabs();
     initReveal();
     initSmoothScroll();
+    initContactForm();
     console.log('Portfolio Architecture Fully Executed.');
 });
